@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 const ReactCompilerConfig = {
-  compilationMode: "annotation"
+  // compilationMode: "annotation"
 };
 
 // https://vitejs.dev/config/

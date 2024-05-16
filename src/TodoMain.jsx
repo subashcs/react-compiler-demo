@@ -4,7 +4,10 @@ import TodoList from './components/TodoList';
 
 const todos = createTodos();
 
-export default function App() {
+export function TodoMain() {
+  "use memo"
+  console.log("compiler check: todolist component rendered")
+
   const [tab, setTab] = useState('all');
   const [isDark, setIsDark] = useState(false);
   return (
