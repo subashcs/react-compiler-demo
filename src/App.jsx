@@ -1,17 +1,14 @@
 import "./App.css";
 import { CountMain } from "./CountMain";
-// import { TodoMain } from "./TodoMain";
+import { TodoMain } from "./TodoMain";
 
 function App() {
 
   return (
-    <>
-      <CountMain/>
-      {/* 
-      Automatic memozation in TodoList inside TodoMain is not working currently
-      <TodoMain/> 
-      */}
-    </>
+    <div style={{display:'grid', "grid-template-columns": "1fr 1fr"}}>
+      <CountMain style={{width:'50%'}}/>
+      <TodoMain/>
+    </div>
   );
 }
 

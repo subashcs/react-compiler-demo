@@ -6,12 +6,15 @@ const todos = createTodos();
 
 export function TodoMain() {
   "use memo"
-  console.log("compiler check: todolist component rendered")
 
   const [tab, setTab] = useState('all');
   const [isDark, setIsDark] = useState(false);
+  console.log("compiler check: todolist component rendered")
+
   return (
-    <>
+    <div>
+     <p>Automatic memozation in TodoList is not working when theme is changed</p>
+     <br/>
       <button onClick={() => setTab('all')}>
         All
       </button>
@@ -36,7 +39,7 @@ export function TodoMain() {
         tab={tab}
         theme={isDark ? 'dark' : 'light'}
       />
-    </>
+    </div>
   );
 }
 
