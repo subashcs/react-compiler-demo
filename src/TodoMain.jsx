@@ -9,7 +9,7 @@ export function TodoMain() {
 
   const [tab, setTab] = useState('all');
   const [isDark, setIsDark] = useState(false);
-  console.log("compiler check: todolist component rendered")
+  console.log("compiler check: todomain component rendered")
 
   return (
     <div>

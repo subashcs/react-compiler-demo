@@ -10,6 +10,7 @@ export default function TodoList({ todos, theme, tab }) {
 
   // uncomment above and comment below to see how it should actually 
   // work by default
+  
   const visibleTodos = filterTodos(todos, tab);
   console.log("compiler check: todolist component rendered")
 
